@@ -61,7 +61,7 @@ public class Step01VariableTest extends PlainTestCase {
 
     /** Same as the previous method question. (前のメソッドの質問と同じ) */
     public void test_variable_reassigned_int() {
-        int sea = 9
+        int sea = 9;
         int land = 415;
         sea = land;
         land++;
@@ -75,7 +75,7 @@ public class Step01VariableTest extends PlainTestCase {
         sea = land;
         sea = land.add(new BigDecimal(1));
         sea.add(new BigDecimal(1));
-        log(sea); // your answer? => 417
+        log(sea); // your answer? => 417(×)
     }
 
     // ===================================================================================
@@ -95,7 +95,7 @@ public class Step01VariableTest extends PlainTestCase {
     /** Same as the previous method question. (前のメソッドの質問と同じ) */
     public void test_variable_instance_variable_default_int() {
         int sea = instanceDockside;
-        log(sea); // your answer? => null
+        log(sea); // your answer? => null(×)=>0(◯)
     }
 
     /** Same as the previous method question. (前のメソッドの質問と同じ) */
