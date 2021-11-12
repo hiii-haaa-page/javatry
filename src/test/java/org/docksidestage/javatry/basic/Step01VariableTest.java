@@ -30,7 +30,7 @@ public class Step01VariableTest extends PlainTestCase {
 
     // ===================================================================================
     //                                                                      Local Variable
-    //                                                                      ==============
+    //              こんにちは                                                        ==============
     /**
      * What string is sea variable at the method end? <br>
      * (メソッド終了時の変数 sea の中身は？)
