@@ -130,13 +130,15 @@ public class Step01VariableTest extends PlainTestCase {
         String sea = "harbor";
         int land = 415;
         helpMethodArgumentImmutableMethodcall(sea, land);
-        log(sea); // your answer? => 
+        log(sea); // your answer? => harbor416(×)=>
+        //TODO　 helpMethodArgumentImmutableMethodcall(sea, land);の部分でlogを出したらharbor416となりましたが、 その影響が及ばないのですか？
     }
 
     private void helpMethodArgumentImmutableMethodcall(String sea, int land) {
         ++land;
         String landStr = String.valueOf(land); // is "416"
         sea.concat(landStr);
+
     }
 
     // -----------------------------------------------------
