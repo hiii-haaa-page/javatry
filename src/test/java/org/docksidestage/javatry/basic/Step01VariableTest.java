@@ -31,6 +31,8 @@ public class Step01VariableTest extends PlainTestCase {
     // ===================================================================================
     //                                                                      Local Variable
     //              こんにちは                                                        ==============
+
+    //MEMO 指定関数のみを実行するショットカットキー　
     /**
      * What string is sea variable at the method end? <br>
      * (メソッド終了時の変数 sea の中身は？)
@@ -149,12 +151,13 @@ public class Step01VariableTest extends PlainTestCase {
         StringBuilder sea = new StringBuilder("harbor");
         int land = 415;
         helpMethodArgumentMethodcall(sea, land);
-        log(sea); // your answer? => 
+        log(sea); // your answer? => harbor(×)→harbor416(◯)
     }
 
     private void helpMethodArgumentMethodcall(StringBuilder sea, int land) {
         ++land;
         sea.append(land);
+        log(sea);
     }
 
     // -----------------------------------------------------
@@ -165,7 +168,7 @@ public class Step01VariableTest extends PlainTestCase {
         StringBuilder sea = new StringBuilder("harbor");
         int land = 415;
         helpMethodArgumentVariable(sea, land);
-        log(sea); // your answer? => 
+        log(sea); // your answer? => harbor(◯)
     }
 
     private void helpMethodArgumentVariable(StringBuilder sea, int land) {
